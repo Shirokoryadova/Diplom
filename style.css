@@ -32,16 +32,10 @@ img {
 	box-sizing: inherit;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-	display: none;
-}
-
 .container {
-	max-width: 1280px;
-
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 /*First slide*/
@@ -55,6 +49,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .header__menu-list {
 	list-style: none;
 	padding-top: 42px;
+	padding-left: 374px;
 }
 
 .header__menu-link {
@@ -66,20 +61,117 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header__telephone {
-	padding-right: 40px;
-	padding-top: 30px;
+	padding-right: 375px;
+	padding-top: 29px;
 }
 
 .telephone {
-	padding-right: 33px;
+	padding-right: 32px;
 	font-size: 25px;
 }
 
 .call {
 	color: #f53f4f;
 	border: 1px solid #f82370;
-	background-color: #fff;
+	background-color: #fbfbfb;
 	width: 207px;
-	height: 45px;
+	height: 46px;
 }
+
+.about {
+	position: relative;
+	overflow: hidden;
+	height: 690px;
+	background-color: #fbfbfb;
+}
+
+.about__photo {
+	background-image: url(img/Ellipse.svg);
+	background-repeat: no-repeat;
+	height: 825px;
+	background-position: bottom right -106px;
+}
+
+.about__myphoto {
+	position: absolute;
+	z-index: 100;
+	right: 202px;
+	top: 54px;
+}
+
+.description {
+	padding-left: 375px;
+}
+
+.about__title {
+	padding-top: 211px;
+	font-size: 80px;
+	font-weight: 700;
+}
+
+.about__description {
+	font-size: 25px;
+	padding-top: 5px;
+}
+
+.about__more {
+	display: flex;
+	border: none;
+	width: 270px;
+	height: 60px;
+	background-color: #ff4e2e;
+	color: #fff;
+	padding-top: 21px;
+	padding-left: 72px;
+	font-size: 18px;
+	margin-top: 45px;
+}
+
+/*Price*/
+.price {
+	color: #fff;
+	background: linear-gradient(to top right, #ff895e, #ff3095);
+	height: 364px;
+	width: 100%;
+	left: 0;
+	position: fixed;
+}
+
+.price__title {
+	font-size: 45px;
+	position: absolute;
+	top: 21%;
+	left: 25.5%;
+	right: 18%;
+}
+
+.price__description {
+	font-size: 18px;
+	line-height: 1.6;
+	position: absolute;
+	top: 62%;
+	right: 35%;
+	left: 26%;
+}
+
+.empty-blog {
+	height: 1000px;
+	background-color: #fff;
+}
+
+/*
+.about__photo-svg {
+	position: absolute;
+	width: 1000px;
+	height: 689px;
+	right: 30px;
+	background-image: url(img/ellipse.svg);
+	background: linear-gradient(to top right, #ff895e, #ff3095);
+}
+
+/*
+.ellipse {
+	background: linear-gradient(to top right, #ff895e, #ff3095);
+}*/
+
 
