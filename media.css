@@ -42,12 +42,12 @@
         margin-top: 46px;
     }
 
-    .about__photo {
+    .about__info {
         height: 887px;
         background-position: bottom right -356px;
     }
 
-    .about__myphoto {
+    .about__my-photo {
         top: 56px;
         right: -54px;
     }
@@ -119,14 +119,14 @@
         line-height: 1.5;
     }
 
-    .about__photo {
+    .about__info {
         height: 418px;
         background-position: center 117px;
         background-size: 500px;
         width: 100%;
     }
 
-    .about__myphoto {
+    .about__my-photo {
        top: 84px;
        left: 28px;
        margin: auto;

@@ -38,33 +38,38 @@
     </header>
 
     <main class="main">
-        <div class="container">
-            <section class="about">
-                <div class="about__photo">
+        <section class="about">
+            <span class="fly-tag fly-tag--braces">{&nbsp;}</span>
+            <span class="fly-tag fly-tag--div">&lt;div&gt;</span>
+            <span class="fly-tag fly-tag--hash">#</span>
+            <span class="fly-tag fly-tag--div2">&lt;div&gt;</span>
+            <span class="fly-tag fly-tag--closed">&lt;/&gt;</span>
+            <div class="container">
+                <div class="about__info">
                     <div class="description">
                         <h1 class="about__title">Дмитрий Алексеев</h1>
                         <p class="about__description">Frontend-разработчик и веб-верстальщик</p>
-                        <button class="about__more">Узнать больше</button>
+                        <button class="btn-fill about__more">Узнать больше</button>
                     </div>
-                    <img class="about__myphoto" src="img/man.png" alt="man">
+                    <img class="about__my-photo" src="img/man.png" alt="man">
                 </div>
+            </div>
+        </section>
 
-                <!--<div class="about__photo">
-                    <div class="description">
-                        <h1 class="about__title">Дмитрий Алексеев</h1>
-                        <p class="about__description">Frontend-разработчик и веб-верстальщик</p>
-                        <button class="about__more">Узнать больше</button>
-                    </div>
-                    <img class="about__myphoto" src="img/man2.png" alt="man">
-                    <img class="about__ellipse" src="img/Ellipse.svg" alt="ellipse">
-                </div>-->
-
-
-                <!--<svg class="about__photo-svg
-                    <ellipse class="ellipse" cx="600" cy="550" rx="450" ry="500" />
-                </svg>">-->
-            </section>
-        </div>
+        <section class="services">
+            <div class="container services__container">
+                <div class="services__info">
+                    <h2 class="services__title">Что я делаю</h2>
+                    <ul class="services__list d-flex">
+                        <li class="services__link services__link--tools">Верстка лендинг-страниц и сайтов любой сложности</li>
+                        <li class="services__link services__link--responsive">Адаптивная верстка под все браузеры и устройства</li>
+                        <li class="services__link services__link--programming">Frontend-разработка и програмирование</li>
+                        <li class="services__link services__link--coding">Исправдение и доработка существующей верстки</li>
+                    </ul>
+                    <button class="btn-fill services__price">Узнать стоимость</button>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
