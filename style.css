@@ -25,15 +25,19 @@
 	font-style: normal;
 }
 
-a {
-	text-decoration: none;
-	color: inherit;
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	background-color: #fbfbfb;
 	font-family: "Roboto", sans-serif;
 	min-width: 320px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
 img {
@@ -75,9 +79,12 @@ ul {
 	font-size: 16px;
 	font-weight: 400;
 	color: #1f1f24;
+	transition: color ease-in-out 0.4s;
 }
 
-.header__menu-link:hover {
+.header__menu-link:hover,
+.footer__menu-link:hover,
+.works__description:hover {
 	color: #f82370;
 	border-bottom: 1px solid #f82370;
 }
@@ -90,6 +97,7 @@ ul {
 	color: #1f1f24;
 	font-size: 25px;
 	font-weight: 700;
+	transition: color ease-in-out 0.4s;
 }
 
 .header__phone {
@@ -104,6 +112,7 @@ ul {
 	color: #f53f4f;
 	font-size: 16px;
 	font-weight: 400;
+	transition: all ease-in-out 0.4s;
 }
 
 .btn--stroke {
@@ -117,6 +126,17 @@ ul {
 .btn-reset {
 	background: transparent;
 	cursor: pointer;
+}
+
+.btn-reset:focus,
+.btn-fill:focus {
+	outline: none;
+}
+
+.btn:hover,
+.btn-fill:hover {
+	background: #f82370;
+	color: #fff;
 }
 
 /*About*/
@@ -182,10 +202,13 @@ ul {
 	padding-top: 30px;
 }
 
+.about__more {
+	padding-top: 19px;
+}
+
 .about__info {
 	padding-top: 155px;
 	position: relative;
-	z-index: 1;
 }
 
 .about__my-photo {
@@ -223,10 +246,13 @@ ul {
 	height: 60px;
 	font-size: 18px;
 	border: none;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	transition: all ease-in-out 0.4s;
 }
 
 /*Services*/
-
 .services {
 	background-color: #fff;
 }
@@ -238,6 +264,10 @@ ul {
 
 .services__info {
 	padding-top: 86px;
+}
+
+.services__price {
+	padding-top: 19px;
 }
 
 .title {
@@ -282,11 +312,26 @@ ul {
 	padding-top: 93px;
 }
 
-.slider-container {
+.works__slider-container {
 	position: relative;
 	margin: 0 auto;
 	padding-top: 101px;
 	max-width: 100%;
+}
+
+.works__swiper-container {
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.works__swiper-wrapper {
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.works__swiper-slide {
+	flex-shrink: 0;
 }
 
 .swiper-button-prev,
@@ -320,6 +365,7 @@ ul {
 .works__description {
 	color: #8993ad;
 	font-size: 20px;
+	transition: color ease-in-out 0.4s;
 }
 
 .works__photo {
@@ -333,7 +379,7 @@ ul {
 /*Price*/
 .price {
 	color: #fff;
-	background: linear-gradient(to  top right, #ff895e 20%, #ff3095 80%);
+	background: linear-gradient(to top right, #ff895e 20%, #ff3095 80%);
 	height: 363px;
 }
 .price__container {
@@ -406,6 +452,10 @@ ul {
 	padding-top: 5px;
 }
 
+.footer__menu-link {
+	transition: color ease-in-out 0.4s;
+}
+
 .footer__menu-list {
 	color: #8993ad;
 }
@@ -420,9 +470,33 @@ ul {
 	padding-left: 64px;
 }
 
+.phone:hover,
+.footer__e-mail:hover {
+	color: #f82370;
+}
+
+.phone-color,
+.email-color {
+	background: linear-gradient(to top, #ff895e 10%, #ff3095 90%);
+	pointer-events: none;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.phone-color {
+	padding-right: 30px;
+	padding-left: 15px;
+	font-size: 19px;
+}
+
+.email-color {
+	padding-top: 6px;
+	padding-left: 31px;
+	padding-right: 16px;
+	font-size: 23px;
+}
+
 .footer__phone {
-	background: url(img/phone.png) 34px 5px no-repeat;
-	padding-left: 73px;
 	padding-bottom: 29px;
 }
 
@@ -430,11 +504,7 @@ ul {
 	color: #1f1f24;
 	font-size: 25px;
 	font-weight: 700;
-}
-
-.footer__e-mail {
-	background: url(img/e-mail.png) 34px 10px no-repeat;
-	padding-left: 81px;
+	transition: color ease-in-out 0.4s;
 }
 
 .footer__btn {
@@ -454,31 +524,45 @@ ul {
 	margin-right: 30px;
 }
 
-.footer__socials--vk {
-	background: url(img/vk.png) no-repeat;
-	width: 35px;
-	height: 20px;
-}
-
-.footer__socials--fb {
-	background: url(img/facebook.png) no-repeat;
-	width: 16px;
-	height: 28px;
-	display: inline-block;
-}
-
-.footer__socials--tw {
-	background: url(img/twitter.png) no-repeat;
-	width: 28px;
-	height: 24px;
-	display: inline-block;
-}
-
+.footer__socials--vk,
+.footer__socials--fb, 
+.footer__socials--tw,
 .footer__socials--inst {
-	background: url(img/instagram.png) no-repeat;
-	width: 25px;
-	height: 25px;
-	display: inline-block;
+	display: inline-block; 
+	background: url('img/social-sprite.png') no-repeat; 
+	cursor: pointer; 
+	transition: all ease-in-out 0.4s;
+}
+
+.footer__socials--vk { 
+	width: 35px; 
+	height: 21px; 
+}
+
+.footer__socials--fb { 
+	background-position: 0 -71px; 
+	width: 16px; 
+	height: 28px; 
+}
+
+.footer__socials--tw { 
+	background-position: 0 -21px;
+	width: 29px; 
+	height: 25px; 
+}
+
+.footer__socials--inst { 
+	background-position: 0 -46px; 
+	width: 25px; 
+	height: 25px; 
+}
+
+.footer__socials--vk:hover,
+.footer__socials--tw:hover,
+.footer__socials--fb:hover,
+.footer__socials--inst:hover {
+	background-color: rgba(248,35,112, 0.3);
+	border-radius: 20%;
 }
 
 .footer__info {
@@ -494,5 +578,117 @@ ul {
 	align-items: center;
 	justify-content: center;
 	font-size: 17px;
-	margin-top: 81px;
+	margin-top: 77px;
+}
+
+/*Form*/
+.form {
+	position: relative;
+	visibility: hidden;
+	transition: all ease-in-out 0.4s;
+	opacity: 0;
+	display: block;
+	z-index: 10;
+}
+
+.form__overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(187, 179, 181, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.form__container {
+	width: 600px;
+	height: 800px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 50px 50px;
+	border: 10px solid  #f82370;
+}
+
+.form__title {
+	font-size: 38px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.form__input span {
+	font-size: 30px;
+	font-weight: 600;
+	max-width: 100px;
+}
+
+.form__input input {
+	font-size: 20px;
+	width: 500px;
+	height: 50px;
+	background-color: rgba(187, 179, 181, 0.5);
+	border: 1px solid #f82370;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.form__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 115px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.form__check {
+	font-size: 18px;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.form__check input {
+	visibility: hidden;
+	width: 0;
+}
+
+.form__check input:checked + span::after {
+	opacity: 1;
+}
+
+.form__check span {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	padding-left: 29px;
+}
+
+.form__check span::before {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 0;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background-color: rgba(187, 179, 181, 0.5);
+}
+
+.form__check span::after {
+	position: absolute;
+	content: "\2714";
+	left: 2px;
+	top: -1px;
+	width: 20px;
+	height: 20px;
+	opacity: 0;
+}
+
+.error {
+	background-color: rgba(233, 19, 19, 0.596) !important;
 }
