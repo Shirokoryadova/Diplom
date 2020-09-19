@@ -1,7 +1,50 @@
+//Menu
+function myFunction(x) {
+  x.classList.toggle('change');
+};
+
+$(function() {
+  
+  //Dropdown toggle
+  $('.header__burger').click(function(){
+    $(this).next('.header__dropdown-list').toggle();
+  });
+  
+  $(document).click(function() {
+    let target = e.target;
+    if ($(target).is('.header__burger')) {
+      $('.header__dropdown-list').hide();
+    }
+  });
+});
+
+//Change work description
+function changeText() {
+  if ($(window).width() < 1024) {
+      $('.works__description_change').text('Интернет-магазин детской одежды')
+  } else {
+      $('.works__description_change').text('Сайт магазина детской одежды')
+  }
+
+  if ($(window).width() < 768) {
+    $('.works__description_change').text('Сайт магазина детской одежды')
+  } else {
+    $('.works__description_change').text('Интернет-магазин детской одежды')
+  }
+}
+
+changeText()
+
+$(window).resize(function () {
+    changeText()
+});
+
+
+//Slider
 const slider = document.querySelector('.works__swiper-container');
 
 let mySwiper = new Swiper(slider, {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 15,
   loop: true,
   slideClass:'works__swiper-slide',
@@ -10,9 +53,25 @@ let mySwiper = new Swiper(slider, {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
+  pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+  breakpoints: {
+    1025: {
+      slidesPerView: 3,
+      spaceBetween: 15,
+    },
 
-const btns = document.querySelectorAll('.btn');
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 37,
+    }
+  }
+});
+
+//Form
+const btns = document.querySelectorAll('.btn-form');
 const modals = document.querySelector('.form');
 const modalOverlay = document.querySelector('.form__overlay');
 
