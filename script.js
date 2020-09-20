@@ -58,7 +58,7 @@ let mySwiper = new Swiper(slider, {
 		clickable: true,
 	},
   breakpoints: {
-    1025: {
+    1026: {
       slidesPerView: 3,
       spaceBetween: 15,
     },
@@ -80,6 +80,7 @@ btns.forEach((el) => {
     let path = e.currentTarget.getAttribute('.data-path');
     modals.style.visibility = 'visible';
     modals.style.opacity = '1';
+    $('body').addClass('scroll');
   });
 });
 
@@ -88,7 +89,8 @@ modalOverlay.addEventListener('click', (e) => {
   if (e.target == modalOverlay) {
     modals.style.visibility = 'hidden';
     modals.style.opacity = '0';
-    modals.style.transition = 'all ease-in-out 0.4s';
+    modals.style.transition = 'opacity ease-in-out 0.4s';
+    $('body').removeClass('scroll');
   }
 });
 
