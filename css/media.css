@@ -1,7 +1,17 @@
 @media (max-width: 1722px) {
+    @keyframes about__hash {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 58px;
+        }
+    }
+
     .about__fly-tag--hash {
-        left: 58px;
         top: 523px;
+        left: 58px;
     }
 
     .price__fly-tag--braces {
@@ -16,6 +26,46 @@
 }
 
 @media (max-width: 1560px) {
+    @keyframes about__braces {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 78px;
+        }
+    }
+
+    @keyframes about__div {
+        0% {
+            top: -50px;
+        }
+    
+        100% {
+            top: 43px;
+        }
+    }
+
+    @keyframes about__div2 {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 870px;
+        }
+    }
+
+    @keyframes about__closed {
+        0% {
+            top: -50px;
+        }
+    
+        100% {
+            top: 473px;
+        }
+    }
+
     .about__fly-tag--braces {
         left: 78px;
         top: 49px;
@@ -232,8 +282,8 @@
     }
 
     .form__btn {
-        margin-left: 0;
         margin-bottom: 20px;
+        margin-left: 91px;
     }
 
     .form__check {
@@ -349,6 +399,81 @@
         width: 100%;
         padding-top: 10px;
         text-align: center;
+    }
+
+    @keyframes about__braces {
+        0% {
+            top: -50px;
+        }
+    
+        100% {
+            top: 18px;
+        }
+    }
+
+    @keyframes about__div {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 245px;
+        }
+    }
+
+    @keyframes about__hash {
+        0% {
+            top: -50px;
+        }
+    
+        100% {
+            top: 122px;
+        }
+    }
+
+    @keyframes about__closed {
+        0% {
+            left: -50px;
+        }
+    
+        100% {
+            left: 172px;
+        }
+    }
+
+    .about__fly-tag--braces {
+        left: 49px;
+        top: 18px;
+        font-size: 25px;
+    }
+
+    .about__fly-tag--div {
+        left: 245px;
+        top: 62px;
+        font-size: 16px;
+        transform: rotate(19deg);
+    }
+
+    .about__fly-tag--hash {
+        left: 37px;
+        top: 122px;
+        font-size: 28px;
+    }
+
+    .about__fly-tag--div2 {
+        display: none;
+    }
+
+    .about__fly-tag--closed {
+        left: 172px;
+        top: -2px;
+        bottom: auto;
+        font-size: 19px;
+        transform: rotate(-30deg);
+    }
+
+    .about__fly-tag--closed2 {
+        display: none;
     }
 
     .about__my-photo {
@@ -520,37 +645,6 @@
         font-size: 13px;
     }
 
-    .about__fly-tag--braces {
-        left: 49px;
-        top: 18px;
-        font-size: 25px;
-    }
-
-    .about__fly-tag--div {
-        left: 245px;
-        top: 62px;
-        font-size: 16px;
-        transform: rotate(19deg);
-    }
-
-    .about__fly-tag--hash {
-        left: 37px;
-        top: 122px;
-        font-size: 28px;
-    }
-
-    .about__fly-tag--div2 {
-        display: none;
-    }
-
-    .about__fly-tag--closed {
-        left: 172px;
-        top: -2px;
-        bottom: auto;
-        font-size: 19px;
-        transform: rotate(-30deg);
-    }
-
     .price__fly-tag--braces,
     .price__fly-tag--div,
     .price__fly-tag--closed {
@@ -572,6 +666,10 @@
 
     .form__input input {
         width: 240px;
+    }
+
+    .form__btn {
+        margin-left: 0;
     }
 
     .form__check {

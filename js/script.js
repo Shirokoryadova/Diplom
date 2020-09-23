@@ -1,3 +1,5 @@
+new WOW().init();
+
 //Menu
 function myFunction(x) {
   x.classList.toggle('change');
@@ -10,7 +12,7 @@ $(function() {
     $(this).next('.header__dropdown-list').toggle();
   });
   
-  $(document).click(function() {
+  $(document).click(function(e) {
     let target = e.target;
     if ($(target).is('.header__burger')) {
       $('.header__dropdown-list').hide();
@@ -114,6 +116,20 @@ $(document).ready(function(){
           required: true,
         }
       },
-    })
-  })
+      submitHandler(form) {
+        let th = $(form);
+
+        $.ajax({
+          type: 'POST',
+          url: 'mail.php',
+          data: th.serialize(),
+        }).done(() => {
+
+          th.trigger('reset');
+        });
+
+        return false;
+      }
+    });
+  });
 });

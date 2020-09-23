@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="media.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -126,11 +127,11 @@
 
         <section class="price" id="price">
             <div class="container price__container">
-                <span class="fly-tag price__fly-tag--braces">{&nbsp;}</span>
-                <span class="fly-tag price__fly-tag--hash">#</span>
-                <span class="fly-tag price__fly-tag--div">&lt;div&gt;</span>
-                <span class="fly-tag price__fly-tag--closed">&lt;/&gt;</span>
-                <span class="fly-tag price__fly-tag--braces2">{&nbsp;}</span>
+                <span class="fly-tag price__fly-tag--braces wow animate__heartBeat">{&nbsp;}</span>
+                <span class="fly-tag price__fly-tag--hash wow animate__heartBeat">#</span>
+                <span class="fly-tag price__fly-tag--div wow animate__heartBeat">&lt;div&gt;</span>
+                <span class="fly-tag price__fly-tag--closed wow animate__heartBeat">&lt;/&gt;</span>
+                <span class="fly-tag price__fly-tag--braces2 wow animate__heartBeat">{&nbsp;}</span>
                 <h2 class="price__title">Адаптивная&nbsp;вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего
                     за&nbsp;4&nbsp;часа.<sup>*</sup></h2>
                 <p class="price__description"><sup>*</sup>Срок и стоимость могут отличаться от заявленных и
@@ -195,7 +196,10 @@
         <div class="form">
             <div class="form__overlay">
                 <div class="container form__container" data-target="form">
-                    <form method="POST" action="https://jsonplaceholder.typicode.com/posts">
+                    <form>
+                        <input type="hidden" name="project_name" value="Тест">
+                        <input type="hidden" name="admin_email" value="shirokoryadovak@gmail.com">
+                        <input type="hidden" name="form_subject" value="Тема">
                         <h2 class="form__title">Ваши контакты для связи</h2>
                         <label class="form__input">
                             <span>Имя</span>
@@ -209,7 +213,7 @@
                             <span>Телефон</span>
                             <input type="tel" name="Телефон" placeholder="+7 (___) ___-____">
                         </label>
-                        <button class="btn form__btn btn-fill btn-form" data-path="form">Заказать звонок</button>
+                        <button type="submit" class="btn form__btn btn-fill btn-form" data-path="form">Заказать звонок</button>
                         <label class="form__check">
                             <input type="checkbox" name="Согласие" checked disabled>
                             <span>Нажимая на кнопку, я даю согласие на обработку персональных
@@ -222,9 +226,10 @@
     </main>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="swiper/swiper-bundle.min.js"></script>
-    <script src="jquery.inputmask.min.js"></script>
-    <script src="jquery.validate.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

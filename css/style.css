@@ -20,7 +20,7 @@
 	font-family: "Roboto";
 	src: url("fonts/Roboto-Bold.woff2"),
 	url("fonts/Roboto-Bold.woff");
-	font-weight: 600;
+	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
 }
@@ -154,10 +154,6 @@ ul {
 	font-size: 10px;
 }
 
-.round {
-	background: url(img/phone-ellipse.png);
-}
-
 .phone {
 	color: #1f1f24;
 	font-size: 25px;
@@ -225,6 +221,7 @@ ul {
 	left: 130px;
 	top: 30px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__braces;
 }
 
 .about__fly-tag--div {
@@ -233,6 +230,7 @@ ul {
 	left: 788px;
 	top: 61px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__div;
 }
 
 .about__fly-tag--hash {
@@ -241,6 +239,7 @@ ul {
     left: 247px;
 	top: 259px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__hash;
 }
 
 .about__fly-tag--div2 {
@@ -250,6 +249,7 @@ ul {
     top: auto;
 	bottom: 185px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__div2;
 }
 
 .about__fly-tag--closed {
@@ -259,15 +259,17 @@ ul {
     top: auto;
 	bottom: 52px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__closed;
 }
 
 .about__fly-tag--closed2 {
 	display: none;
-	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
 	font-size: 45px;
 	transform: rotate(14deg);
 	left: 423px;
 	top: 125px;
+	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__closed2;
 }
 
 .about__container {
@@ -501,6 +503,7 @@ ul {
 	transform: rotate(25deg);
 	left: -226px;
 	top: 59px;
+	animation: 1s linear wow;
 }
 
 .price__fly-tag--hash {
@@ -509,6 +512,7 @@ ul {
 	top: 246px;
 	left: -110px;
 	transform: rotate(16deg);
+	animation: 1s linear wow;
 }
 
 .price__fly-tag--div {
@@ -517,6 +521,7 @@ ul {
 	transform: rotate(20deg);
 	bottom: -63px;
 	right: 56px;
+	animation: 1s linear wow;
 }
 
 .price__fly-tag--closed {
@@ -525,6 +530,7 @@ ul {
 	transform: rotate(-24deg);
 	right: -149px;
 	top: 74px;
+	animation: 1s linear wow;
 }
 
 .price__fly-tag--braces2 {
@@ -533,6 +539,7 @@ ul {
 	transform: rotate(-19deg);
 	top: 252px;
 	right: -247px;
+	animation: 1s linear wow;
 }
 
 /*Footer*/
@@ -716,7 +723,7 @@ ul {
 
 .form__input span {
 	font-size: 30px;
-	font-weight: 600;
+	font-weight: 700;
 	max-width: 100px;
 }
 
@@ -791,3 +798,64 @@ ul {
 .scroll {
 	overflow: hidden;
 }
+
+@keyframes about__braces {
+	0% {
+		left: -50px;
+	}
+
+	100% {
+		left: 130px;
+	}
+}
+
+@keyframes about__div {
+	0% {
+		top: -50px;
+	}
+
+	100% {
+		top: 61px;
+	}
+}
+
+@keyframes about__hash {
+	0% {
+		left: -50px;
+	}
+
+	100% {
+		left: 247px;
+	}
+}
+
+@keyframes about__div2 {
+	0% {
+		bottom: -50px;
+	}
+
+	100% {
+		bottom: 185px;
+	}
+}
+
+@keyframes about__closed {
+	0% {
+		bottom: -50px;
+	}
+
+	100% {
+		bottom: 52px;
+	}
+}
+
+@keyframes about__closed2 {
+	0% {
+		top: -50px;
+	}
+
+	100% {
+		top: 125px;
+	}
+}
+
