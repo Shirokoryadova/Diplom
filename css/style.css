@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Roboto";
-	src: url("fonts/Roboto-Light.woff2"),
-	url("fonts/Roboto-Light.woff");
+	src: url("../fonts/Roboto-Light.woff2"),
+	url("../fonts/Roboto-Light.woff");
 	font-weight: 300;
 	font-display: swap;
 	font-style: normal;
@@ -9,8 +9,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("fonts/Roboto-Regular.woff2"),
-	url("fonts/Roboto-Regular.woff");
+	src: url("../fonts/Roboto-Regular.woff2"),
+	url("../fonts/Roboto-Regular.woff");
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -18,8 +18,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("fonts/Roboto-Bold.woff2"),
-	url("fonts/Roboto-Bold.woff");
+	src: url("../fonts/Roboto-Bold.woff2"),
+	url("../fonts/Roboto-Bold.woff");
 	font-weight: 700;
 	font-display: swap;
 	font-style: normal;
@@ -340,11 +340,11 @@ ul {
 
 .services__container {
 	text-align: center;
-	padding-bottom: 100px;
+	margin-bottom: 100px;
 }
 
 .services__info {
-	padding-top: 86px;
+	margin-top: 86px;
 }
 
 .services__price {
@@ -371,26 +371,26 @@ ul {
 }
 
 .services__link--tools {
-	background: url(img/tools.png) 113px 0 no-repeat;
+	background: url(../img/tools.png) 113px 0 no-repeat;
 }
 
 .services__link--responsive {
-	background: url(img/responsive.png) 115px 0 no-repeat;
+	background: url(../img/responsive.png) 115px 0 no-repeat;
 }
 
 .services__link--programming {
-	background: url(img/programming.png) 82px 0 no-repeat;
+	background: url(../img/programming.png) 82px 0 no-repeat;
 }
 
 .services__link--coding {
-	background: url(img/coding.png) 113px 0 no-repeat;
+	background: url(../img/coding.png) 113px 0 no-repeat;
 }
 
 /*Works*/
 .works__container {
 	text-align: center;
 	max-width: 1230px;
-	padding-top: 93px;
+	margin-top: 93px;
 }
 
 .works__slider-container {
@@ -423,7 +423,7 @@ ul {
 }
 
 .swiper-button-prev {
-	background: url(img/arrow-prev.png) no-repeat;
+	background: url(../img/arrow-prev.png) no-repeat;
 	position: absolute;
 	transform: translateY(33%);
 	left: -19px;
@@ -431,7 +431,7 @@ ul {
 }
 
 .swiper-button-next {
-	background: url(img/arrow-next.png) no-repeat;
+	background: url(../img/arrow-next.png) no-repeat;
 	position: absolute;
 	transform: translateY(33%);
 	right: -18px;
@@ -544,7 +544,7 @@ ul {
 
 /*Footer*/
 .footer__container {
-	padding-top: 78px;
+	margin-top: 78px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -630,7 +630,7 @@ ul {
 .footer__socials--tw,
 .footer__socials--inst {
 	display: inline-block; 
-	background: url('img/social-sprite.png') no-repeat; 
+	background: url('../img/social-sprite.png') no-repeat; 
 	cursor: pointer; 
 	transition: background-color, border-radius ease-in-out 0.4s;
 }
@@ -708,7 +708,7 @@ ul {
 
 .form__container {
 	width: 600px;
-	height: 800px;
+	height: 700px;
 	background-color: #fff;
 	margin: 0 auto;
 	padding: 50px 50px;
@@ -743,9 +743,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 115px;
-	margin-top: 50px;
-	margin-bottom: 30px;
+	margin: 0 auto;
 }
 
 .form__check {

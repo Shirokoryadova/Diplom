@@ -124,10 +124,11 @@ $(document).ready(function(){
           url: 'mail.php',
           data: th.serialize(),
         }).done(() => {
-
-          th.trigger('reset');
+          alert('Ваша заявка отправлена. Скоро мы свяжемся с вами!');
+          setTimeout(function() {
+            th.trigger('reset');
+          }, 500);
         });
-
         return false;
       }
     });

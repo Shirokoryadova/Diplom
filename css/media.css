@@ -264,7 +264,7 @@
 
     .form__container {
         width: 600px;
-        height: 630px;
+        height: 570px;
     }
 
     .form__title {
@@ -279,11 +279,6 @@
     .form__input input {
         width: 500px;
         height: 40px;
-    }
-
-    .form__btn {
-        margin-bottom: 20px;
-        margin-left: 91px;
     }
 
     .form__check {
