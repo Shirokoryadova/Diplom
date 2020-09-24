@@ -386,7 +386,8 @@
         display: none;
     }
 
-    .about {
+    .about,
+    .header {
         background-color: #fff;
     }
 
@@ -474,7 +475,7 @@
     .about__my-photo {
         margin-right: -84px;
         margin-left: 0;
-        margin-top: 22px;
+        margin-top: 23px;
         max-width: 300px;
     }
 
