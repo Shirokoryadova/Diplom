@@ -218,10 +218,10 @@ ul {
 .about__fly-tag--braces {
 	font-size: 48px;
 	transform: rotate(30deg);
-	-webkit-transform: rotate(30deg);
 	left: 130px;
 	top: 30px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
+	animation: 1s linear about__braces;
 }
 
 .about__fly-tag--div {

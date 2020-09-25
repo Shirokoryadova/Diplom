@@ -400,10 +400,12 @@
     @keyframes about__braces {
         0% {
             top: -50px;
+            left: -50px;
         }
     
         100% {
             top: 18px;
+            left: 49px;
         }
     }
 
