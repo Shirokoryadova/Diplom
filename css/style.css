@@ -132,7 +132,7 @@ ul {
 }
 
 .header__menu-link {
-	padding-right: 27px;
+	margin-right: 27px;
 	font-size: 16px;
 	font-weight: 400;
 	color: #1f1f24;

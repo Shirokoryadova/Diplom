@@ -124,6 +124,10 @@
         top: 138px;
     }
 
+    .services__price {
+        padding-top: 24px;
+    }
+
     .price__fly-tag--div {
         font-size: 25px;
         right: 453px;
@@ -173,10 +177,6 @@
     .services__link--programming,
     .services__link--coding {
         background-position: 154px 0;
-    }
-
-    .services__price {
-        padding-top: 24px;
     }
 
     .price__container {
