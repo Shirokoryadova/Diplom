@@ -776,23 +776,13 @@ ul {
 
 .form__check span::before {
 	position: absolute;
-	content: "";
-	left: 0px;
+	content: "\2714";
+	left: 2px;
 	top: 0;
 	width: 20px;
 	height: 20px;
 	border-radius: 5px;
 	background-color: rgba(187, 179, 181, 0.5);
-}
-
-.form__check span::after {
-	position: absolute;
-	content: "\2714";
-	left: 2px;
-	top: -1px;
-	width: 20px;
-	height: 20px;
-	opacity: 0;
 }
 
 .error {
