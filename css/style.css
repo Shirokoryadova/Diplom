@@ -218,6 +218,7 @@ ul {
 .about__fly-tag--braces {
 	font-size: 48px;
 	transform: rotate(30deg);
+	will-change: transform;
 	left: 130px;
 	top: 30px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
@@ -227,6 +228,7 @@ ul {
 .about__fly-tag--div {
 	font-size: 30px;
 	transform: rotate(-13deg);
+	will-change: transform;
 	left: 788px;
 	top: 61px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
@@ -235,7 +237,8 @@ ul {
 
 .about__fly-tag--hash {
     font-size: 56px;
-    transform: rotate(17deg);
+	transform: rotate(17deg);
+	will-change: transform;
     left: 247px;
 	top: 259px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
@@ -244,7 +247,8 @@ ul {
 
 .about__fly-tag--div2 {
     font-size: 37px;
-    transform: rotate(21deg);
+	transform: rotate(21deg);
+	will-change: transform;
     left: 951px;
     top: auto;
 	bottom: 185px;
@@ -254,7 +258,8 @@ ul {
 
 .about__fly-tag--closed {
     font-size: 41px;
-    transform: rotate(-22deg);
+	transform: rotate(-22deg);
+	will-change: transform;
     left: 377px;
     top: auto;
 	bottom: 52px;
@@ -266,6 +271,7 @@ ul {
 	display: none;
 	font-size: 45px;
 	transform: rotate(14deg);
+	will-change: transform;
 	left: 423px;
 	top: 125px;
 	background-image: linear-gradient(to top, #f26522 0%, #fa0891 99%, #fa0891 100%);
