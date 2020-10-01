@@ -8,7 +8,7 @@ function myFunction(x) {
 $(function() {
   
   //Dropdown toggle
-  $('.header__burger').click(function(){
+  $('.header__burger').on('click', function(){
     $(this).next('.header__dropdown-list').toggle();
   });
   
@@ -23,9 +23,9 @@ $(function() {
 //Change work description
 function changeText() {
   if ($(window).width() < 1024) {
-      $('.works__description_change').text('Интернет-магазин детской одежды')
+    $('.works__description_change').text('Интернет-магазин детской одежды')
   } else {
-      $('.works__description_change').text('Сайт магазина детской одежды')
+    $('.works__description_change').text('Сайт магазина детской одежды')
   }
 
   if ($(window).width() < 768) {
@@ -38,7 +38,7 @@ function changeText() {
 changeText()
 
 $(window).resize(function () {
-    changeText()
+  changeText()
 });
 
 
