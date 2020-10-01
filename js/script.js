@@ -12,8 +12,7 @@ $(function() {
     $(this).next('.header__dropdown-list').toggle();
   });
   
-  $(document).click(function(e) {
-    let target = e.target;
+  $(document).click(function() {
     if ($(target).is('.header__burger')) {
       $('.header__dropdown-list').hide();
     }
