@@ -352,6 +352,7 @@
 
     .header__container {
         justify-content: center;
+        align-items: unset;
     }
 
     .header {
@@ -380,6 +381,7 @@
 
     .header__phone {
         margin-right: auto;
+        padding-top: 2px;
     }
 
     .phone-call {
