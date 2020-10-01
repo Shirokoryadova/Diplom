@@ -709,7 +709,6 @@ ul {
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-
 }
 
 .form__container {
@@ -794,6 +793,18 @@ ul {
 	overflow: hidden;
 }
 
+.alert {
+	display: none;
+	font-size: 40px;
+	text-align: center;
+	width: 550px;
+	height: 350px;
+	background-color: #fff;
+	padding: 50px 50px;
+	border: 10px solid  #f82370;
+}
+
+/*Animation*/
 @keyframes about__braces {
 	0% {
 		left: -50px;

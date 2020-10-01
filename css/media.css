@@ -673,6 +673,13 @@
     .form__check {
         font-size: 12px;
     }
+
+    .alert {
+        font-size: 20px;
+        width: 300px;
+        height: 216px;
+    }
+
 }
 
 
