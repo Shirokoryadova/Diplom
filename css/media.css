@@ -150,7 +150,7 @@
     }
 
     .services__info {
-        padding-bottom: 195px;
+        padding-bottom: 102px;
     }
 
     .services__list {
@@ -258,8 +258,8 @@
         padding-top: 81px;
     }
 
-    footer {
-        padding-top: 100px;
+    .footer__container {
+        margin-top: 101px;
     }
 
     .form__container {
@@ -290,6 +290,7 @@
     .about__container {
         flex-direction: column-reverse;
         align-items: center;
+        padding-bottom: 43px;
     }
 
     .about__info {
@@ -306,6 +307,10 @@
     .about__more,
     .services__price {
         padding-top: 18px;
+    }
+
+    .services__info {
+        padding-top: 43px;
     }
 
     .services__link {
@@ -347,7 +352,6 @@
 
     .header__container {
         justify-content: center;
-        align-items: unset;
     }
 
     .header {
@@ -382,6 +386,10 @@
         display: block;
     }
 
+    .phone-ellipse {
+        vertical-align: middle;
+    }
+
     .header__btn {
         display: none;
     }
@@ -393,7 +401,7 @@
 
     .about__info {
         width: 100%;
-        padding-top: 10px;
+        padding-top: 14px;
         text-align: center;
     }
 
@@ -441,20 +449,20 @@
 
     .about__fly-tag--braces {
         left: 49px;
-        top: 18px;
+        top: 21px;
         font-size: 25px;
     }
 
     .about__fly-tag--div {
         left: 245px;
-        top: 62px;
+        top: 65px;
         font-size: 16px;
         transform: rotate(19deg);
     }
 
     .about__fly-tag--hash {
         left: 37px;
-        top: 122px;
+        top: 126px;
         font-size: 28px;
     }
 
@@ -464,7 +472,7 @@
 
     .about__fly-tag--closed {
         left: 172px;
-        top: -2px;
+        top: 1px;
         bottom: auto;
         font-size: 19px;
         transform: rotate(-30deg);
@@ -485,18 +493,18 @@
         min-width: none;
         width: 100%;
         height: 296px;
-        top: 92px;
+        top: 94px;
     }
 
     .about__title {
         font-size: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 29px;
         white-space: initial;
     }
 
     .about__description {
         font-size: 16px;
-        margin-top: 13px;
+        margin-top: 12px;
     }
 
     .title {
@@ -552,6 +560,10 @@
         line-height: 1.8;
     }
 
+    .works__container {
+        margin-top: 0;
+    }
+
     .works__slider-container {
         padding-top: 41px;
     }
@@ -581,10 +593,6 @@
 
     .price {
         padding-bottom: 47px;
-    }
-
-    footer {
-        padding-top: 0;
     }
     
     .footer__container {

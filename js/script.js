@@ -87,7 +87,6 @@ btns.forEach((el) => {
 });
 
 modalOverlay.addEventListener('click', (e) => {
-  console.log(e.target);
   if (e.target == modalOverlay) {
     modals.style.visibility = 'hidden';
     modals.style.opacity = '0';
