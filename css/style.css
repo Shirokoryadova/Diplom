@@ -136,7 +136,7 @@ ul {
 	font-size: 16px;
 	font-weight: 400;
 	color: #1f1f24;
-	transition: color ease-in-out 0.4s;
+	transition: color ease-in-out 0.4s, border-bottom ease-in-out 0.4s;
 }
 
 .header__menu-link:hover,
@@ -178,7 +178,7 @@ ul {
 	color: #f53f4f;
 	font-size: 16px;
 	font-weight: 400;
-	transition: background-color, color ease-in-out 0.4s;
+	transition: background-color ease-in-out 0.4s, color ease-in-out 0.4s;
 }
 
 .btn-stroke {
@@ -336,7 +336,7 @@ ul {
 	cursor: pointer;
 	display: inline-block;
 	text-align: center;
-	transition: background-color ease-in-out 0.4s;
+	transition: background-color ease-in-out 0.4s, color ease-in-out 0.4s;
 }
 
 /*Services*/
@@ -638,7 +638,7 @@ ul {
 	display: inline-block; 
 	background: url('../img/social-sprite.png') no-repeat; 
 	cursor: pointer; 
-	transition: background-color, border-radius ease-in-out 0.4s;
+	transition: background-color ease-in-out 0.4s, border-radius ease-in-out 0.4s;
 }
 
 .footer__socials--vk { 
