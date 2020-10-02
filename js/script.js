@@ -12,11 +12,13 @@ $(function() {
     $(this).next('.header__dropdown-list').toggle();
   });
   
-  $(document).click(function() {
-    if ($(target).is('.header__burger')) {
-      $('.header__dropdown-list').hide();
+  function handler(e) {
+    let target = $(e.target);
+    if (target.is('.header__burger')) {
+      target.children().toggle();
     }
-  });
+  }
+  $('.header__dropdown-list').click(handler).find('.header__dropdown-list').hide();
 });
 
 //Change work description
